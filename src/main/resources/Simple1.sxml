@@ -81,7 +81,7 @@
             <keyList></keyList>
             <keyList>elem40</keyList>
             <keyList></keyList>
-            <keyList></keyList>
+            <keyList>elem43</keyList>
             <keyList></keyList>
             <keyList></keyList>
         </txChannels>
@@ -304,6 +304,11 @@
             <count>1</count>
             <key>elem42</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="acquElement" nbPointKey="param173" nameKey="param171" enabledKey="param172"/>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>elem43</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="txElement" offsetKey="table31" phaseKey="table32" ampKey="table33" shapeKey="table34" shapePhaseKey="table29" attKey="table35" phaseModKey="table36" shapeNameKey="param186" nameKey="param184" enabledKey="param185"/>
         </Entry>
     </elems>
     <params>
@@ -3229,6 +3234,50 @@
                 <suggestedValues>USER15</suggestedValues>
             </value>
         </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param184</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Name44</name>
+                <uuid>da5d1de8-d397-4138-8522-0fea477ebdf4</uuid>
+                <value>Txe2</value>
+                <defaultValue>Elem</defaultValue>
+                <description>The name of the element</description>
+                <displayedName>Name44</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param185</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
+                <name>Enabled44</name>
+                <uuid>1b518d97-3c61-4b05-ad27-ce4eb85ecba9</uuid>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+                <description>The state of the element</description>
+                <displayedName>Enabled44</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param186</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_shape_name2</name>
+                <uuid>e9e9d7e3-6604-4bb5-9138-235aee022ea0</uuid>
+                <value>Custom</value>
+                <defaultValue>Custom</defaultValue>
+                <description>Name of the shape, also the name of the shape file.</description>
+                <displayedName>Shape name</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+            </value>
+        </Entry>
     </params>
     <tables>
         <name>TableRepos</name>
@@ -3586,6 +3635,96 @@
             <key>table28</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
                 <name>PhaseModTable3</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+                <phaseModEnum>NONE</phaseModEnum>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table29</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
+                <name>Shape_phase3</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table31</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Frequency_offset3</name>
+                <description></description>
+                <numberEnum>FrequencyOffset</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table32</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Tx_phase2</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table33</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Tx_amp2</name>
+                <description></description>
+                <numberEnum>TxAmp</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>10</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table34</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
+                <name>Tx_shape2</name>
+                <description></description>
+                <numberEnum>TxShape</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table35</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Tx_att3</name>
+                <description></description>
+                <numberEnum>TxAtt</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+                <list>0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table36</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="phaseModTable">
+                <name>PhaseModTable4</name>
                 <description></description>
                 <numberEnum>Phase</numberEnum>
                 <order>One</order>
