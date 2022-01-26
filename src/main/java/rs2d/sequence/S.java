@@ -6,8 +6,8 @@ import rs2d.spinlab.sequenceGenerator.GeneratorSequenceParamEnum;
 
 public enum S implements GeneratorSequenceParamEnum {
     Nb_1d("Nb_1d"),
-    Nb_2d("Nb_2d"), //--?
-    Nb_3d("Nb_3d"), //--?
+    Nb_2d("Nb_2d"),
+    Nb_3d("Nb_3d"),
     Nb_4d("Nb_4d"),
     Pre_scan("Pre_scan"),
     Tx_nucleus("Tx_nucleus");
